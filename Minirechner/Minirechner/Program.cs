@@ -38,6 +38,11 @@ namespace Minirechner
 				Subtrahieren(Zahl1, Zahl2);
 			}
 
+			if (Rechenart == "/")
+			{
+				Dividieren(Zahl1, Zahl2);
+			}
+
 		}
 
 		//Addieren
@@ -55,6 +60,15 @@ namespace Minirechner
 			//Rechnen + Ausgeben
 			Console.Write("Ergebnis:");
 			Console.WriteLine(Zahl1 - Zahl2);
+			Console.ReadKey();
+		}
+
+		//Dividieren
+		static void Dividieren(double Zahl1, double Zahl2)
+		{
+			//Rechnen + Ausgeben
+			Console.Write("Ergebnis:");
+			Console.WriteLine(Zahl1 / Zahl2);
 			Console.ReadKey();
 		}
 
