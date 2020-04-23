@@ -43,6 +43,11 @@ namespace Minirechner
 				Dividieren(Zahl1, Zahl2);
 			}
 
+			if (Rechenart == "*")
+			{
+				Multiplizieren(Zahl1, Zahl2);
+			}
+
 		}
 
 		//Addieren
@@ -69,6 +74,15 @@ namespace Minirechner
 			//Rechnen + Ausgeben
 			Console.Write("Ergebnis:");
 			Console.WriteLine(Zahl1 / Zahl2);
+			Console.ReadKey();
+		}
+
+		//Multiplizieren
+		static void Multiplizieren(double Zahl1, double Zahl2)
+		{
+			//Rechnen + Ausgeben
+			Console.Write("Ergebnis:");
+			Console.WriteLine(Zahl1 * Zahl2);
 			Console.ReadKey();
 		}
 
